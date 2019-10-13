@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arif Karahan</title>
+</head>
+<body>
+<h1>2019 Güz Döneminin ilk ödevi</h1>
+<h2>Arif Karahan 2014280056</h2>
+<form name="toplam">
+<label>Sayı kutusu 1: </label>
+<input type="number" id="s1"><br><br>
+<label>Sayı kutusu 2: </label>
+<input type="number" id="s2"><br><br>
+<input type="button" id="toplam" value="TOPLA">
+</form>
+<br>
+<div id="Toplam"></div>
+<script>
+var btn=document.getElementById("toplam");
+    btn.onclick=function(){
+    var s1=Number(document.getElementById("s1").value);
+    var s2=Number(document.getElementById("s2").value);
+    var toplam=s1+s2;
+    alert("Girilen Sayıların Toplamı : "+toplam);  }
+</script>
+</body>
+<body>
+<form name="toplam">
+<label>Metin kutusu 1 : </label>
+<input type="text" id="s3"><br><br>
+<label>Metin kutusu 2 : </label>
+<input type="text" id="s4"><br><br>
+<input type="button" id="yapıştır" value="YAPIŞTIR">
+</form>
+<br>
+<script>
+    var btn=document.getElementById("yapıştır");
+    btn.onclick=function(){
+    var s3=(document.getElementById("s3").value);
+    var s4=(document.getElementById("s4").value);
+    var yapıştır=s3+s4;
+     alert(""+yapıştır);   }
+</script>	
+</body>
+</html>
